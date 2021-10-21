@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SimilarProductsFragment">
+
+    <TextView
+        android:id="@+id/tv_content_head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="@string/content_based_filtering"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/content_based_product_list"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/content_based_product_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content_head"
+        app:layout_constraintBottom_toTopOf="@id/tv_collaborative_head"/>
+
+    <TextView
+        android:id="@+id/tv_collaborative_head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="@string/collaborative_based_filtering"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content_based_product_list"
+        app:layout_constraintBottom_toTopOf="@id/collaborative_based_product_list"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collaborative_based_product_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_collaborative_head"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_brands">
+
+    <fragment
+        android:id="@+id/nav_brands"
+        android:name="com.skincare.fragments.brands.BrandsFragment"
+        android:label="@string/brands"
+        tools:layout="@layout/fragment_brands" >
+        <action
+            android:id="@+id/action_nav_brands_to_nav_brand_products"
+            app:destination="@id/nav_brand_products" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_brand_products"
+        android:name="com.skincare.fragments.brands.BrandProductsFragment"
+        android:label="@string/brands"
+        tools:layout="@layout/fragment_brand_products" >
+        <action
+            android:id="@+id/action_nav_brand_products_to_nav_brand_product_details"
+            app:destination="@id/nav_brand_product_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_brand_product_details"
+        android:name="com.skincare.fragments.brands.BrandProductDetailsFragment"
+        android:label="@string/brands"
+        tools:layout="@layout/fragment_brand_product_details" >
+        <action
+            android:id="@+id/action_nav_brand_product_details_to_nav_product_details"
+            app:destination="@id/nav_product_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_product_details"
+        android:name="com.skincare.fragments.ProductDetailsFragment"
+        android:label="@string/brands"
+        tools:layout="@layout/fragment_product_details" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.skincare.fragments.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.skincare.fragments.search.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_nav_search_to_nav_brand_product_details"
+            app:destination="@id/nav_brand_product_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_liked_products"
+        android:name="com.skincare.fragments.LikedProductsFragment"
+        android:label="@string/liked_products"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_nav_liked_products_to_nav_brand_product_details"
+            app:destination="@id/nav_brand_product_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_similar_products"
+        android:name="com.skincare.fragments.SimilarProductsFragment"
+        android:label="@string/similar_products"
+        tools:layout="@layout/fragment_similar_products" >
+        <action
+            android:id="@+id/action_nav_similar_products_to_nav_brand_product_details"
+            app:destination="@id/nav_brand_product_details" />
+    </fragment>
+
+</navigation>

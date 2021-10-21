@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Skincare</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_signup">Don\'t have an account? Signup</string>
+    <string name="signup">Signup</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign in</string>
+    <string name="skin_combination">Skin Combination</string>
+    <string name="dry_skin">Dry Skin</string>
+    <string name="normal_skin">Normal Skin</string>
+    <string name="oily_skin">Oily Skin</string>
+    <string name="sensitive_skin">Sensitive Skin</string>
+    <string name="brands">Brands</string>
+    <string name="liked_products">Liked Products</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="similar_products">Similar Products</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="details">Details</string>
+    <string name="no_ratings_uptill_now">No ratings uptill now</string>
+    <string name="description">Description</string>
+    <string name="comments_0">Comments (0)</string>
+    <string name="no_comment_yet">No comments yet</string>
+    <string name="logout">Logout</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="enter_comment_here">Enter Comment here...</string>
+    <string name="content_based_filtering">Content Based Filtering</string>
+    <string name="collaborative_based_filtering">Collaborative Based Filtering</string>
+</resources>

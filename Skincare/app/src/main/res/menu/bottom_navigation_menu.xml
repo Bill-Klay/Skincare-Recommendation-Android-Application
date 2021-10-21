@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_brands"
+        android:icon="@drawable/ic_brands"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_liked_products"
+        android:icon="@drawable/ic_like"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_similar_products"
+        android:icon="@drawable/ic_recommendations"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search"
+        android:title=""/>
+
+</menu>
